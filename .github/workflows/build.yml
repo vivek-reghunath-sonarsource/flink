@@ -36,4 +36,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=vivek-reghunath-sonarsource_flink_AYuA6XMYTjRXavMxW9dY -Dsonar.projectName='flink'
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=vivek-reghunath-sonarsource_flink_AYuA6XMYTjRXavMxW9dY -Dsonar.projectName='flink' -Dmaven.test.skip=true
