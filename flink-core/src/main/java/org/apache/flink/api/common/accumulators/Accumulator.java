@@ -61,5 +61,6 @@ public interface Accumulator<V, R extends Serializable> extends Serializable, Cl
      *
      * @return The duplicated accumulator.
      */
-    Accumulator<V, R> clone();
+    Accumulator<V, R> clone(); 
+    
 }
